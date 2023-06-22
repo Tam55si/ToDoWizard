@@ -38,7 +38,7 @@ const List = ({ items, removeItem, editItem }) => {
                         <article key={id} className='grocery-item'>
                             <p className='title'>{title}</p>
                             <div className='btn-container'>
-                                <button className='timer-btn' type='button' onClick={() => { toggleModal(!modalShown) }}><RxLapTimer /></button>
+                                {/* <button className='timer-btn' type='button' onClick={() => { toggleModal(!modalShown) }}><RxLapTimer /></button> */}
                                 <button className='edit-btn' type='button' onClick={() => editItem(id)}><FaEdit /></button>
                                 <button className='delete-btn' type='button' onClick={() => removeItem(id)}><FaTrash /></button>
                             </div>
